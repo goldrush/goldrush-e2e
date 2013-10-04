@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '0.3.11'
+#gem 'mysql2', '0.3.11'
 
 
 # Gems used only for assets and not required
@@ -22,6 +22,14 @@ end
 
 gem 'jquery-rails'
 
+group :test, :development do
+  gem "rspec-rails"
+  gem 'simplecov', :require => false
+  gem 'simplecov-rcov', :require => false
+  gem 'capybara', '2.0.3'
+  gem 'capybara-webkit'
+  gem 'turnip'
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

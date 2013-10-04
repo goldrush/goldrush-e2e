@@ -43,10 +43,10 @@ RSpec.configure do |config|
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
   #     --seed 1234
-  config.order = "random"
+  config.order = "default"
 end
 
 Capybara.run_server = false
 Capybara.default_driver = :webkit
-Capybara.app_host = 'http://localhost:3000/'
-#Capybara.app_host = 'http://dev.applicative.jp/'
+#Capybara.app_host = 'http://localhost:3000/'
+Capybara.app_host = 'http://dev.applicative.jp/'

@@ -49,4 +49,4 @@ end
 Capybara.run_server = false
 Capybara.default_driver = :webkit
 #Capybara.app_host = 'http://localhost:3000/'
-Capybara.app_host = 'http://dev.applicative.jp/'
+Capybara.app_host = 'http://dev.applicative.jp/goldrush/'

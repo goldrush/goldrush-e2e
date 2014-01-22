@@ -5,9 +5,9 @@ step 'ログインページを表示している' do
 end
 
 step 'ホーム画面が表示されていること' do
-  current_path.should == '/'
+  current_path.should == '/goldrush/'
 end
 
 step 'ログインページが表示されていること' do
-  current_path.should == '/auth/sign_in'
+  current_path.should == '/goldrush/auth/sign_in'
 end

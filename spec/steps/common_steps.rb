@@ -63,7 +63,7 @@ end
 
 step 'ログインする' do
   visit '/auth/sign_in'
-  fill_in "auth[email]", :with => 'system@aaa.com'
-  fill_in "auth[password]", :with => 'aaaaaa'
+  fill_in "auth[email]", :with => 'system@applicative.jp'
+  fill_in "auth[password]", :with => 'applicative99'
   click_button "ログイン"
 end

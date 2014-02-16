@@ -3,8 +3,8 @@
 
 シナリオ: ログイン成功
 前提 ログインページを表示している
-もし "auth[email]"に"system@aaa.com"と入力する
-かつ "auth[password]"に"aaaaaa"と入力する
+もし "auth[email]"に"system@applicative.jp"と入力する
+かつ "auth[password]"に"applicative99"と入力する
 かつ "ログイン"ボタンをクリックする
 ならば ホーム画面が表示されていること
 かつ "管理者さんのマイページ"と表示されていること

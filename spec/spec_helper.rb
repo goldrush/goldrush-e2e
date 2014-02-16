@@ -17,6 +17,8 @@ require 'rspec/autorun'
 require 'turnip'
 require 'turnip/capybara'
 
+require 'uri'
+
 RSpec.configure do |config|
   # ## Mock Framework
   #
@@ -46,7 +48,10 @@ RSpec.configure do |config|
   config.order = "default"
 end
 
+DefaultContext.target_host = (ENV['TARGET_HOST'] || 'http://dev.applicative.jp/goldrush')
+
 Capybara.run_server = false
 Capybara.default_driver = :webkit
 #Capybara.app_host = 'http://localhost:3000/'
-Capybara.app_host = 'http://dev.applicative.jp/goldrush/'
+Capybara.app_host = DefaultContext.target_host
+

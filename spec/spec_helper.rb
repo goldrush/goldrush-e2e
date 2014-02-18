@@ -48,10 +48,11 @@ RSpec.configure do |config|
   config.order = "default"
 end
 
-DefaultContext.target_host = (ENV['TARGET_HOST'] || 'http://dev.applicative.jp/goldrush')
+DefaultContext.config[:login] = (ENV['LOGIN'] || 'system@aaa.com')
+DefaultContext.config[:passwd] = (ENV['PASSWD'] || 'aaaaaa')
+DefaultContext.target_host = (ENV['TARGET_HOST'] || 'http://localhost:3000/')
 
 Capybara.run_server = false
 Capybara.default_driver = :webkit
-#Capybara.app_host = 'http://localhost:3000/'
 Capybara.app_host = DefaultContext.target_host
 

@@ -63,7 +63,7 @@ end
 
 step 'ログインする' do
   visit '/auth/sign_in'
-  fill_in "auth[email]", :with => 'system@applicative.jp'
-  fill_in "auth[password]", :with => 'applicative99'
+  fill_in "auth[email]", :with => DefaultContext.config[:login]
+  fill_in "auth[password]", :with => DefaultContext.config[:passwd]
   click_button "ログイン"
 end

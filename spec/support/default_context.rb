@@ -9,7 +9,7 @@ class DefaultContext
   def self.target_host=(str)
     @@config['target_host'] = str
     uri = URI.parse(str)
-    self.path_prefix = (uri.path || '/')
+    self.path_prefix = (uri.path.blank? ? '/' : uri.path)
   end
   def self.target_host
     @@config['target_host']

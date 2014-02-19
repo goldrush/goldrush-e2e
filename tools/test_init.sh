@@ -3,5 +3,5 @@
 cur=`dirname $0`
 
 bundle install
-bundle update
+#bundle update
 

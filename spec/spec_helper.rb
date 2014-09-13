@@ -50,9 +50,8 @@ end
 
 DefaultContext.config[:login] = (ENV['LOGIN'] || 'system@aaa.com')
 DefaultContext.config[:passwd] = (ENV['PASSWD'] || 'aaaaaa')
-DefaultContext.target_host = (ENV['TARGET_HOST'] || 'http://localhost:3000/')
+DefaultContext.target_host = (ENV['TARGET_HOST'] || 'http://localhost:3000/goldrush')
 
 Capybara.run_server = false
 Capybara.default_driver = :webkit
 Capybara.app_host = DefaultContext.target_host
-
